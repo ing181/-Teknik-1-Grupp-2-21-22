@@ -1,6 +1,7 @@
 
 int sensorPin = A0;
 int tonePin = 8;
+int sensor;
 void setup() {
   // put your setup code here, to run once:
   pinMode(tonePin,OUTPUT);
@@ -9,6 +10,7 @@ void setup() {
 }
 
 void loop() {
+  sensor = analogRead(sensorPin);
   // put your main code here, to run repeatedly:
   // En inbygd funktio i Arduino
   // "tone" Får Buzzern åt låta med en viss frekvens
